@@ -24,7 +24,7 @@ app.get('/', function (req: express.Request, res: express.Response): void {
 
 
 // Color Page
-const app.get('/:color', function (req: express.Request, res: express.Response) {
+app.get('/:color', function (req: express.Request, res: express.Response) {
     //string methods don't work on type 'unkown'
     let myColor: unknown = req.params.color
     if (typeof (myColor) === 'string') {

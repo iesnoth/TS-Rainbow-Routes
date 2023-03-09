@@ -16,7 +16,8 @@ app.get('/', function (req, res) {
     res.send("\n        <body style=\"margin: 0;\">\n            <div style=\"border: 1px solid black; height: 10vh; background-color: white;\">\n                <h2 style=\"text-align: center;\">NAV BAR</h2>\n            </div>\n            <h1>White Page</h1>\n        </body>\n    ");
 });
 // Color Page
-app.get('/:color', function (req, res) {
+var app, get;
+('/:color', function (req, res) {
     //string methods don't work on type 'unkown'
     var myColor = req.params.color;
     if (typeof (myColor) === 'string') {
